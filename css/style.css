@@ -41,7 +41,8 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+/*     background: var(--bg-color); */
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
     align-items: center;
