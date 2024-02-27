@@ -61,3 +61,24 @@ const typed=new Typed('.multiple-text',{
     loop: true
 });
 
+// about section Read more
+let readMoreBtn=document.querySelector('#read-more-btn');
+readMoreBtn.addEventListener('click', ()=>{
+    let contextDot = document.getElementsByClassName('context-dot')[0];
+    let contextPara = document.getElementById('context-para');
+    contextDot.classList.toggle('hideIt');
+    if(contextDot.classList.contains('hideIt')){
+        readMoreBtn.innerHTML='Read Less';
+        contextPara.innerHTML += `<br>During my preparation for NEET, I gained valuable experience and insights that have proven to be incredibly helpful in my current field of software engineering. I learned to approach problems in a systematic and analytical way, and I discovered how to learn things quickly and efficiently. These skills have been invaluable in my work as a programmer, where I'm constantly encountering new challenges and technologies.
+        <br>
+        Although I was unable to secure admission into a medical college, I didn't let that setback discourage me. Instead, I took the opportunity to explore other fields and discovered a love for programming. I began teaching myself programming languages like Java, C, and C++, and I quickly realized that I had a talent for software engineering.
+        <br>
+        Since then, I've been actively working on projects to develop my skills in software engineering. I'm constantly learning new techniques and exploring different areas of the field, and I'm excited to see where my journey takes me. At the same time, I've continued to pursue my passion for music, playing the tabla and experimenting with new ways to create and produce music. Also am a National Scholarship holder in Tabla.
+        <br>
+        Overall, I'm someone who's passionate about exploring new areas of knowledge and pushing myself to achieve my goals. Whether it's through music or coding, I'm always looking for ways to challenge myself and grow as a person. The experience and skills I gained during my NEET preparation have proven to be invaluable in my current pursuits, and I'm excited to see where my journey takes me next.`;
+    }else{
+        readMoreBtn.innerHTML='Read More';
+        contextPara.innerHTML = `Hi, I'm Pratik Kumar Sahoo, a passionate tabla player and music enthusiast who's discovered a new passion for coding and software engineering. After finishing my 12th exams, I initially wanted to pursued admission into a medical college so started preparing for NEET. However, I ultimately didn't break and started a new journey of coding.<span class="context-dot">....</span>`;
+    } 
+}
+);

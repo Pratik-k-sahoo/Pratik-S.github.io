@@ -212,56 +212,21 @@ bpan{
     margin: 2rem 0 3rem;
 }
 
+.context-dot{
+    color: white;
+}
+
 #check{
+    display: none;
+}
+
+.hideIt{
     display: none;
 }
 
 .readMoreContent{
     display: none;
     transition: 0.5s linear;
-}
-
-label {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--sun-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 2rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    /* transition: .5s ease; */
-}
-
-label:hover{
-    box-shadow: none;
-    cursor: pointer;
-}
-
-#check:checked ~ .readMoreContent{
-    display: flex;
-}
-
-#check:checked ~ label{
-    visibility: hidden;
-}
-
-#check:checked ~ label:after{
-    content:'SHOW LESS';
-    display: block;
-    visibility: visible;
-    padding: 1rem 2.8rem;
-    background: var(--sun-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 2rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-    
-    
 }
 
 .education{
@@ -483,6 +448,17 @@ label:hover{
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
+}
+
+
+.contact form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact form input[type=number]{
+    -moz-appearance: textfield;
 }
 
 .popup{
