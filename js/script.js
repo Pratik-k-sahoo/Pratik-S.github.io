@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // typed js
 const typed=new Typed('.multiple-text',{
-    strings: ['2nd Year Student in ITER, SOA', 'YouTuber', 'Instrumentalist and Music producer'],
+    strings: ['Pre-Final Year Student in ITER, SOA', 'YouTuber', 'Instrumentalist and Music producer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
